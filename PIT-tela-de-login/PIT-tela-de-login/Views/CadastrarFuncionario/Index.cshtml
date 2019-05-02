@@ -1,0 +1,60 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section scripts{
+    <script src="~/js/CadastrarFuncionario/Index.js"></script>
+    <script src="~/lib/jquery/jquery-3.4.0.min.js"></script>
+    <link href="~/lib/fancybox3/jquery.fancybox.min.css" rel="stylesheet" />
+    <script src="~/lib/fancybox3/jquery.fancybox.min.js"></script>
+}
+
+
+<br />
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-body">
+                    Cadastrar Funcionário.
+                </div>
+            </div>
+            <div class="wrapper fadeInDown">
+
+                <div id="formContent">
+                    <!-- Tabs Titles -->
+                    <!-- Icon -->
+                    <br />
+                    <div class="fadeIn first">
+                        <!--<img src="~/images/logo-lanchonete.png" style="width:150px; height:100px;" id="icon" alt="User Icon" />-->
+                    </div>
+                    <br />
+                    <!-- Login Form -->
+                    <form>
+                        <input type="hidden" id="hId" value="0" />
+                        <input type="text" id="nome" class="fadeIn second" placeholder="Nome">
+                        <span id="reqNome" class="requerido">*</span>
+
+                        <input type="text" id="cpf" class="fadeIn second" placeholder="CPF">
+                        <span id="reqCpf" class="requerido">*</span>
+
+                        <input type="password" id="senha" class="fadeIn second" placeholder="Senha">
+                        <span id="reqSenha" class="requerido">*</span>
+
+                        <br /><br />
+                        <input type="button" style="background-color:limegreen;" class="fadeIn fourth" value="Cadastrar" onclick="index.gravar()">
+                        <input type="button" style="background-color:red;" class="fadeIn fourth" value="Cancelar" onclick="index.cancelar()">
+                        <input type="button" style="background-color:#56baed;" class="fadeIn fourth" value="Pesquisar" onclick="index.abrirPesquisa()">
+                        <div id="divMsg"></div>
+                    </form>
+
+
+                    <!--<div id="formFooter1">
+                        <a class="underlineHover" href="CadastrarFuncionario/Index">Registrar</a>
+                    </div>-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

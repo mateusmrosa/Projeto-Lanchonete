@@ -1,0 +1,121 @@
+C:\Users\Aluno\Desktop\PIT-tela-de-login\PIT-tela-de-login\bin\Debug\netcoreapp2.0\PIT-tela-de-login.deps.json
+C:\Users\Aluno\Desktop\PIT-tela-de-login\PIT-tela-de-login\bin\Debug\netcoreapp2.0\PIT-tela-de-login.runtimeconfig.json
+C:\Users\Aluno\Desktop\PIT-tela-de-login\PIT-tela-de-login\bin\Debug\netcoreapp2.0\PIT-tela-de-login.runtimeconfig.dev.json
+C:\Users\Aluno\Desktop\PIT-tela-de-login\PIT-tela-de-login\bin\Debug\netcoreapp2.0\PIT-tela-de-login.dll
+C:\Users\Aluno\Desktop\PIT-tela-de-login\PIT-tela-de-login\bin\Debug\netcoreapp2.0\PIT-tela-de-login.pdb
+C:\Users\Aluno\Desktop\PIT-tela-de-login\PIT-tela-de-login\obj\Debug\netcoreapp2.0\PIT-tela-de-login.csprojAssemblyReference.cache
+C:\Users\Aluno\Desktop\PIT-tela-de-login\PIT-tela-de-login\obj\Debug\netcoreapp2.0\PIT-tela-de-login.csproj.CoreCompileInputs.cache
+C:\Users\Aluno\Desktop\PIT-tela-de-login\PIT-tela-de-login\obj\Debug\netcoreapp2.0\PIT-tela-de-login.AssemblyInfoInputs.cache
+C:\Users\Aluno\Desktop\PIT-tela-de-login\PIT-tela-de-login\obj\Debug\netcoreapp2.0\PIT-tela-de-login.AssemblyInfo.cs
+C:\Users\Aluno\Desktop\PIT-tela-de-login\PIT-tela-de-login\obj\Debug\netcoreapp2.0\PIT-tela-de-login.dll
+C:\Users\Aluno\Desktop\PIT-tela-de-login\PIT-tela-de-login\obj\Debug\netcoreapp2.0\PIT-tela-de-login.pdb
+C:\PIT-tela-de-login.git\PIT-tela-de-login\bin\Debug\netcoreapp2.0\PIT-tela-de-login.deps.json
+C:\PIT-tela-de-login.git\PIT-tela-de-login\bin\Debug\netcoreapp2.0\PIT-tela-de-login.runtimeconfig.json
+C:\PIT-tela-de-login.git\PIT-tela-de-login\bin\Debug\netcoreapp2.0\PIT-tela-de-login.runtimeconfig.dev.json
+C:\PIT-tela-de-login.git\PIT-tela-de-login\bin\Debug\netcoreapp2.0\PIT-tela-de-login.dll
+C:\PIT-tela-de-login.git\PIT-tela-de-login\bin\Debug\netcoreapp2.0\PIT-tela-de-login.pdb
+C:\PIT-tela-de-login.git\PIT-tela-de-login\obj\Debug\netcoreapp2.0\PIT-tela-de-login.csprojAssemblyReference.cache
+C:\PIT-tela-de-login.git\PIT-tela-de-login\obj\Debug\netcoreapp2.0\PIT-tela-de-login.csproj.CoreCompileInputs.cache
+C:\PIT-tela-de-login.git\PIT-tela-de-login\obj\Debug\netcoreapp2.0\PIT-tela-de-login.AssemblyInfoInputs.cache
+C:\PIT-tela-de-login.git\PIT-tela-de-login\obj\Debug\netcoreapp2.0\PIT-tela-de-login.AssemblyInfo.cs
+C:\PIT-tela-de-login.git\PIT-tela-de-login\obj\Debug\netcoreapp2.0\PIT-tela-de-login.dll
+C:\PIT-tela-de-login.git\PIT-tela-de-login\obj\Debug\netcoreapp2.0\PIT-tela-de-login.pdb
+C:\Users\Aluno\Downloads\PIT-tela-de-login-master\PIT-tela-de-login-master\PIT-tela-de-login\bin\Debug\netcoreapp2.0\PIT-tela-de-login.deps.json
+C:\Users\Aluno\Downloads\PIT-tela-de-login-master\PIT-tela-de-login-master\PIT-tela-de-login\bin\Debug\netcoreapp2.0\PIT-tela-de-login.runtimeconfig.json
+C:\Users\Aluno\Downloads\PIT-tela-de-login-master\PIT-tela-de-login-master\PIT-tela-de-login\bin\Debug\netcoreapp2.0\PIT-tela-de-login.runtimeconfig.dev.json
+C:\Users\Aluno\Downloads\PIT-tela-de-login-master\PIT-tela-de-login-master\PIT-tela-de-login\bin\Debug\netcoreapp2.0\PIT-tela-de-login.dll
+C:\Users\Aluno\Downloads\PIT-tela-de-login-master\PIT-tela-de-login-master\PIT-tela-de-login\bin\Debug\netcoreapp2.0\PIT-tela-de-login.pdb
+C:\Users\Aluno\Downloads\PIT-tela-de-login-master\PIT-tela-de-login-master\PIT-tela-de-login\obj\Debug\netcoreapp2.0\PIT-tela-de-login.csprojAssemblyReference.cache
+C:\Users\Aluno\Downloads\PIT-tela-de-login-master\PIT-tela-de-login-master\PIT-tela-de-login\obj\Debug\netcoreapp2.0\PIT-tela-de-login.csproj.CoreCompileInputs.cache
+C:\Users\Aluno\Downloads\PIT-tela-de-login-master\PIT-tela-de-login-master\PIT-tela-de-login\obj\Debug\netcoreapp2.0\PIT-tela-de-login.AssemblyInfoInputs.cache
+C:\Users\Aluno\Downloads\PIT-tela-de-login-master\PIT-tela-de-login-master\PIT-tela-de-login\obj\Debug\netcoreapp2.0\PIT-tela-de-login.AssemblyInfo.cs
+C:\Users\Aluno\Downloads\PIT-tela-de-login-master\PIT-tela-de-login-master\PIT-tela-de-login\obj\Debug\netcoreapp2.0\PIT-tela-de-login.dll
+C:\Users\Aluno\Downloads\PIT-tela-de-login-master\PIT-tela-de-login-master\PIT-tela-de-login\obj\Debug\netcoreapp2.0\PIT-tela-de-login.pdb
+C:\Users\Aluno\Desktop\PIT-tela-de-login-master\PIT-tela-de-login-master\PIT-tela-de-login\bin\Debug\netcoreapp2.0\PIT-tela-de-login.deps.json
+C:\Users\Aluno\Desktop\PIT-tela-de-login-master\PIT-tela-de-login-master\PIT-tela-de-login\bin\Debug\netcoreapp2.0\PIT-tela-de-login.runtimeconfig.json
+C:\Users\Aluno\Desktop\PIT-tela-de-login-master\PIT-tela-de-login-master\PIT-tela-de-login\bin\Debug\netcoreapp2.0\PIT-tela-de-login.runtimeconfig.dev.json
+C:\Users\Aluno\Desktop\PIT-tela-de-login-master\PIT-tela-de-login-master\PIT-tela-de-login\bin\Debug\netcoreapp2.0\PIT-tela-de-login.dll
+C:\Users\Aluno\Desktop\PIT-tela-de-login-master\PIT-tela-de-login-master\PIT-tela-de-login\bin\Debug\netcoreapp2.0\PIT-tela-de-login.pdb
+C:\Users\Aluno\Desktop\PIT-tela-de-login-master\PIT-tela-de-login-master\PIT-tela-de-login\obj\Debug\netcoreapp2.0\PIT-tela-de-login.csprojAssemblyReference.cache
+C:\Users\Aluno\Desktop\PIT-tela-de-login-master\PIT-tela-de-login-master\PIT-tela-de-login\obj\Debug\netcoreapp2.0\PIT-tela-de-login.csproj.CoreCompileInputs.cache
+C:\Users\Aluno\Desktop\PIT-tela-de-login-master\PIT-tela-de-login-master\PIT-tela-de-login\obj\Debug\netcoreapp2.0\PIT-tela-de-login.AssemblyInfoInputs.cache
+C:\Users\Aluno\Desktop\PIT-tela-de-login-master\PIT-tela-de-login-master\PIT-tela-de-login\obj\Debug\netcoreapp2.0\PIT-tela-de-login.AssemblyInfo.cs
+C:\Users\Aluno\Desktop\PIT-tela-de-login-master\PIT-tela-de-login-master\PIT-tela-de-login\obj\Debug\netcoreapp2.0\PIT-tela-de-login.dll
+C:\Users\Aluno\Desktop\PIT-tela-de-login-master\PIT-tela-de-login-master\PIT-tela-de-login\obj\Debug\netcoreapp2.0\PIT-tela-de-login.pdb
+D:\P\PIT-tela-de-login-master\PIT-tela-de-login-master\PIT-tela-de-login\bin\Debug\netcoreapp2.0\PIT-tela-de-login.deps.json
+D:\P\PIT-tela-de-login-master\PIT-tela-de-login-master\PIT-tela-de-login\bin\Debug\netcoreapp2.0\PIT-tela-de-login.runtimeconfig.json
+D:\P\PIT-tela-de-login-master\PIT-tela-de-login-master\PIT-tela-de-login\bin\Debug\netcoreapp2.0\PIT-tela-de-login.runtimeconfig.dev.json
+D:\P\PIT-tela-de-login-master\PIT-tela-de-login-master\PIT-tela-de-login\bin\Debug\netcoreapp2.0\PIT-tela-de-login.dll
+D:\P\PIT-tela-de-login-master\PIT-tela-de-login-master\PIT-tela-de-login\bin\Debug\netcoreapp2.0\PIT-tela-de-login.pdb
+D:\P\PIT-tela-de-login-master\PIT-tela-de-login-master\PIT-tela-de-login\obj\Debug\netcoreapp2.0\PIT-tela-de-login.csprojAssemblyReference.cache
+D:\P\PIT-tela-de-login-master\PIT-tela-de-login-master\PIT-tela-de-login\obj\Debug\netcoreapp2.0\PIT-tela-de-login.csproj.CoreCompileInputs.cache
+D:\P\PIT-tela-de-login-master\PIT-tela-de-login-master\PIT-tela-de-login\obj\Debug\netcoreapp2.0\PIT-tela-de-login.AssemblyInfoInputs.cache
+D:\P\PIT-tela-de-login-master\PIT-tela-de-login-master\PIT-tela-de-login\obj\Debug\netcoreapp2.0\PIT-tela-de-login.AssemblyInfo.cs
+D:\P\PIT-tela-de-login-master\PIT-tela-de-login-master\PIT-tela-de-login\obj\Debug\netcoreapp2.0\PIT-tela-de-login.dll
+D:\P\PIT-tela-de-login-master\PIT-tela-de-login-master\PIT-tela-de-login\obj\Debug\netcoreapp2.0\PIT-tela-de-login.pdb
+C:\Users\Mateus Rosa\Downloads\PITteladeloginmaster (1)\PIT-tela-de-login-master\PIT-tela-de-login-master\PIT-tela-de-login\bin\Debug\netcoreapp2.0\PIT-tela-de-login.deps.json
+C:\Users\Mateus Rosa\Downloads\PITteladeloginmaster (1)\PIT-tela-de-login-master\PIT-tela-de-login-master\PIT-tela-de-login\bin\Debug\netcoreapp2.0\PIT-tela-de-login.runtimeconfig.json
+C:\Users\Mateus Rosa\Downloads\PITteladeloginmaster (1)\PIT-tela-de-login-master\PIT-tela-de-login-master\PIT-tela-de-login\bin\Debug\netcoreapp2.0\PIT-tela-de-login.runtimeconfig.dev.json
+C:\Users\Mateus Rosa\Downloads\PITteladeloginmaster (1)\PIT-tela-de-login-master\PIT-tela-de-login-master\PIT-tela-de-login\bin\Debug\netcoreapp2.0\PIT-tela-de-login.dll
+C:\Users\Mateus Rosa\Downloads\PITteladeloginmaster (1)\PIT-tela-de-login-master\PIT-tela-de-login-master\PIT-tela-de-login\bin\Debug\netcoreapp2.0\PIT-tela-de-login.pdb
+C:\Users\Mateus Rosa\Downloads\PITteladeloginmaster (1)\PIT-tela-de-login-master\PIT-tela-de-login-master\PIT-tela-de-login\obj\Debug\netcoreapp2.0\PIT-tela-de-login.csprojAssemblyReference.cache
+C:\Users\Mateus Rosa\Downloads\PITteladeloginmaster (1)\PIT-tela-de-login-master\PIT-tela-de-login-master\PIT-tela-de-login\obj\Debug\netcoreapp2.0\PIT-tela-de-login.csproj.CoreCompileInputs.cache
+C:\Users\Mateus Rosa\Downloads\PITteladeloginmaster (1)\PIT-tela-de-login-master\PIT-tela-de-login-master\PIT-tela-de-login\obj\Debug\netcoreapp2.0\PIT-tela-de-login.AssemblyInfoInputs.cache
+C:\Users\Mateus Rosa\Downloads\PITteladeloginmaster (1)\PIT-tela-de-login-master\PIT-tela-de-login-master\PIT-tela-de-login\obj\Debug\netcoreapp2.0\PIT-tela-de-login.AssemblyInfo.cs
+C:\Users\Mateus Rosa\Downloads\PITteladeloginmaster (1)\PIT-tela-de-login-master\PIT-tela-de-login-master\PIT-tela-de-login\obj\Debug\netcoreapp2.0\PIT-tela-de-login.dll
+C:\Users\Mateus Rosa\Downloads\PITteladeloginmaster (1)\PIT-tela-de-login-master\PIT-tela-de-login-master\PIT-tela-de-login\obj\Debug\netcoreapp2.0\PIT-tela-de-login.pdb
+C:\Projeto-Lanchonete\PITteladeloginmaster\PIT-tela-de-login-master\PIT-tela-de-login-master\PIT-tela-de-login\bin\Debug\netcoreapp2.0\PIT-tela-de-login.deps.json
+C:\Projeto-Lanchonete\PITteladeloginmaster\PIT-tela-de-login-master\PIT-tela-de-login-master\PIT-tela-de-login\bin\Debug\netcoreapp2.0\PIT-tela-de-login.runtimeconfig.json
+C:\Projeto-Lanchonete\PITteladeloginmaster\PIT-tela-de-login-master\PIT-tela-de-login-master\PIT-tela-de-login\bin\Debug\netcoreapp2.0\PIT-tela-de-login.runtimeconfig.dev.json
+C:\Projeto-Lanchonete\PITteladeloginmaster\PIT-tela-de-login-master\PIT-tela-de-login-master\PIT-tela-de-login\bin\Debug\netcoreapp2.0\PIT-tela-de-login.dll
+C:\Projeto-Lanchonete\PITteladeloginmaster\PIT-tela-de-login-master\PIT-tela-de-login-master\PIT-tela-de-login\bin\Debug\netcoreapp2.0\PIT-tela-de-login.pdb
+C:\Projeto-Lanchonete\PITteladeloginmaster\PIT-tela-de-login-master\PIT-tela-de-login-master\PIT-tela-de-login\obj\Debug\netcoreapp2.0\PIT-tela-de-login.csprojAssemblyReference.cache
+C:\Projeto-Lanchonete\PITteladeloginmaster\PIT-tela-de-login-master\PIT-tela-de-login-master\PIT-tela-de-login\obj\Debug\netcoreapp2.0\PIT-tela-de-login.csproj.CoreCompileInputs.cache
+C:\Projeto-Lanchonete\PITteladeloginmaster\PIT-tela-de-login-master\PIT-tela-de-login-master\PIT-tela-de-login\obj\Debug\netcoreapp2.0\PIT-tela-de-login.AssemblyInfoInputs.cache
+C:\Projeto-Lanchonete\PITteladeloginmaster\PIT-tela-de-login-master\PIT-tela-de-login-master\PIT-tela-de-login\obj\Debug\netcoreapp2.0\PIT-tela-de-login.AssemblyInfo.cs
+C:\Projeto-Lanchonete\PITteladeloginmaster\PIT-tela-de-login-master\PIT-tela-de-login-master\PIT-tela-de-login\obj\Debug\netcoreapp2.0\PIT-tela-de-login.dll
+C:\Projeto-Lanchonete\PITteladeloginmaster\PIT-tela-de-login-master\PIT-tela-de-login-master\PIT-tela-de-login\obj\Debug\netcoreapp2.0\PIT-tela-de-login.pdb
+C:\Projeto-Lanchonete\PIT-tela-de-login\PIT-tela-de-login\bin\Debug\netcoreapp2.0\PIT-tela-de-login.deps.json
+C:\Projeto-Lanchonete\PIT-tela-de-login\PIT-tela-de-login\bin\Debug\netcoreapp2.0\PIT-tela-de-login.runtimeconfig.json
+C:\Projeto-Lanchonete\PIT-tela-de-login\PIT-tela-de-login\bin\Debug\netcoreapp2.0\PIT-tela-de-login.runtimeconfig.dev.json
+C:\Projeto-Lanchonete\PIT-tela-de-login\PIT-tela-de-login\bin\Debug\netcoreapp2.0\PIT-tela-de-login.dll
+C:\Projeto-Lanchonete\PIT-tela-de-login\PIT-tela-de-login\bin\Debug\netcoreapp2.0\PIT-tela-de-login.pdb
+C:\Projeto-Lanchonete\PIT-tela-de-login\PIT-tela-de-login\obj\Debug\netcoreapp2.0\PIT-tela-de-login.csprojAssemblyReference.cache
+C:\Projeto-Lanchonete\PIT-tela-de-login\PIT-tela-de-login\obj\Debug\netcoreapp2.0\PIT-tela-de-login.csproj.CoreCompileInputs.cache
+C:\Projeto-Lanchonete\PIT-tela-de-login\PIT-tela-de-login\obj\Debug\netcoreapp2.0\PIT-tela-de-login.AssemblyInfoInputs.cache
+C:\Projeto-Lanchonete\PIT-tela-de-login\PIT-tela-de-login\obj\Debug\netcoreapp2.0\PIT-tela-de-login.AssemblyInfo.cs
+C:\Projeto-Lanchonete\PIT-tela-de-login\PIT-tela-de-login\obj\Debug\netcoreapp2.0\PIT-tela-de-login.dll
+C:\Projeto-Lanchonete\PIT-tela-de-login\PIT-tela-de-login\obj\Debug\netcoreapp2.0\PIT-tela-de-login.pdb
+C:\Projeto Pit (Lanchonete)\PIT-tela-de-login\PIT-tela-de-login\obj\Debug\netcoreapp2.0\PIT-tela-de-login.dll
+C:\Projeto Pit (Lanchonete)\PIT-tela-de-login\PIT-tela-de-login\obj\Debug\netcoreapp2.0\PIT-tela-de-login.pdb
+C:\Projeto Pit (Lanchonete)\PIT-tela-de-login\PIT-tela-de-login\bin\Debug\netcoreapp2.0\PIT-tela-de-login.deps.json
+C:\Projeto Pit (Lanchonete)\PIT-tela-de-login\PIT-tela-de-login\bin\Debug\netcoreapp2.0\PIT-tela-de-login.runtimeconfig.json
+C:\Projeto Pit (Lanchonete)\PIT-tela-de-login\PIT-tela-de-login\bin\Debug\netcoreapp2.0\PIT-tela-de-login.runtimeconfig.dev.json
+C:\Projeto Pit (Lanchonete)\PIT-tela-de-login\PIT-tela-de-login\bin\Debug\netcoreapp2.0\PIT-tela-de-login.dll
+C:\Projeto Pit (Lanchonete)\PIT-tela-de-login\PIT-tela-de-login\bin\Debug\netcoreapp2.0\PIT-tela-de-login.pdb
+C:\Projeto Pit (Lanchonete)\PIT-tela-de-login\PIT-tela-de-login\obj\Debug\netcoreapp2.0\PIT-tela-de-login.csprojAssemblyReference.cache
+C:\Projeto Pit (Lanchonete)\PIT-tela-de-login\PIT-tela-de-login\obj\Debug\netcoreapp2.0\PIT-tela-de-login.csproj.CoreCompileInputs.cache
+C:\Projeto Pit (Lanchonete)\PIT-tela-de-login\PIT-tela-de-login\obj\Debug\netcoreapp2.0\PIT-tela-de-login.AssemblyInfoInputs.cache
+C:\Projeto Pit (Lanchonete)\PIT-tela-de-login\PIT-tela-de-login\obj\Debug\netcoreapp2.0\PIT-tela-de-login.AssemblyInfo.cs
+C:\Users\jeran\Desktop\testeformulario\PIT-tela-de-login\PIT-tela-de-login\PIT-tela-de-login\bin\Debug\netcoreapp2.0\PIT-tela-de-login.deps.json
+C:\Users\jeran\Desktop\testeformulario\PIT-tela-de-login\PIT-tela-de-login\PIT-tela-de-login\bin\Debug\netcoreapp2.0\PIT-tela-de-login.runtimeconfig.json
+C:\Users\jeran\Desktop\testeformulario\PIT-tela-de-login\PIT-tela-de-login\PIT-tela-de-login\bin\Debug\netcoreapp2.0\PIT-tela-de-login.runtimeconfig.dev.json
+C:\Users\jeran\Desktop\testeformulario\PIT-tela-de-login\PIT-tela-de-login\PIT-tela-de-login\bin\Debug\netcoreapp2.0\PIT-tela-de-login.dll
+C:\Users\jeran\Desktop\testeformulario\PIT-tela-de-login\PIT-tela-de-login\PIT-tela-de-login\bin\Debug\netcoreapp2.0\PIT-tela-de-login.pdb
+C:\Users\jeran\Desktop\testeformulario\PIT-tela-de-login\PIT-tela-de-login\PIT-tela-de-login\obj\Debug\netcoreapp2.0\PIT-tela-de-login.csprojAssemblyReference.cache
+C:\Users\jeran\Desktop\testeformulario\PIT-tela-de-login\PIT-tela-de-login\PIT-tela-de-login\obj\Debug\netcoreapp2.0\PIT-tela-de-login.csproj.CoreCompileInputs.cache
+C:\Users\jeran\Desktop\testeformulario\PIT-tela-de-login\PIT-tela-de-login\PIT-tela-de-login\obj\Debug\netcoreapp2.0\PIT-tela-de-login.AssemblyInfoInputs.cache
+C:\Users\jeran\Desktop\testeformulario\PIT-tela-de-login\PIT-tela-de-login\PIT-tela-de-login\obj\Debug\netcoreapp2.0\PIT-tela-de-login.AssemblyInfo.cs
+C:\Users\jeran\Desktop\testeformulario\PIT-tela-de-login\PIT-tela-de-login\PIT-tela-de-login\obj\Debug\netcoreapp2.0\PIT-tela-de-login.dll
+C:\Users\jeran\Desktop\testeformulario\PIT-tela-de-login\PIT-tela-de-login\PIT-tela-de-login\obj\Debug\netcoreapp2.0\PIT-tela-de-login.pdb
+C:\Users\Mateus Rosa\Desktop\PIT-tela-de-login\PIT-tela-de-login\PIT-tela-de-login\bin\Debug\netcoreapp2.0\PIT-tela-de-login.deps.json
+C:\Users\Mateus Rosa\Desktop\PIT-tela-de-login\PIT-tela-de-login\PIT-tela-de-login\bin\Debug\netcoreapp2.0\PIT-tela-de-login.runtimeconfig.json
+C:\Users\Mateus Rosa\Desktop\PIT-tela-de-login\PIT-tela-de-login\PIT-tela-de-login\bin\Debug\netcoreapp2.0\PIT-tela-de-login.runtimeconfig.dev.json
+C:\Users\Mateus Rosa\Desktop\PIT-tela-de-login\PIT-tela-de-login\PIT-tela-de-login\bin\Debug\netcoreapp2.0\PIT-tela-de-login.dll
+C:\Users\Mateus Rosa\Desktop\PIT-tela-de-login\PIT-tela-de-login\PIT-tela-de-login\bin\Debug\netcoreapp2.0\PIT-tela-de-login.pdb
+C:\Users\Mateus Rosa\Desktop\PIT-tela-de-login\PIT-tela-de-login\PIT-tela-de-login\obj\Debug\netcoreapp2.0\PIT-tela-de-login.csproj.CoreCompileInputs.cache
+C:\Users\Mateus Rosa\Desktop\PIT-tela-de-login\PIT-tela-de-login\PIT-tela-de-login\obj\Debug\netcoreapp2.0\PIT-tela-de-login.AssemblyInfoInputs.cache
+C:\Users\Mateus Rosa\Desktop\PIT-tela-de-login\PIT-tela-de-login\PIT-tela-de-login\obj\Debug\netcoreapp2.0\PIT-tela-de-login.AssemblyInfo.cs
+C:\Users\Mateus Rosa\Desktop\PIT-tela-de-login\PIT-tela-de-login\PIT-tela-de-login\obj\Debug\netcoreapp2.0\PIT-tela-de-login.dll
+C:\Users\Mateus Rosa\Desktop\PIT-tela-de-login\PIT-tela-de-login\PIT-tela-de-login\obj\Debug\netcoreapp2.0\PIT-tela-de-login.pdb
+C:\Users\Mateus Rosa\Desktop\PIT-tela-de-login\PIT-tela-de-login\PIT-tela-de-login\obj\Debug\netcoreapp2.0\PIT-tela-de-login.csprojAssemblyReference.cache

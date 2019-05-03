@@ -38,8 +38,6 @@ var index = {
         //alert("oi");
         $.fancybox.open({
             src: "/cadastrarfuncionario/IndexPesquisar",
-            'height': '400px',
-            'width': '400px',
             type: 'iframe',
             smallBtn: true
         });

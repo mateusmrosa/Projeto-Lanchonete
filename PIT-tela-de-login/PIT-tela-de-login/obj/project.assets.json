@@ -13619,11 +13619,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projeto Pit (Lanchonete)\\PIT-tela-de-login\\PIT-tela-de-login\\PIT-tela-de-login.csproj",
+      "projectUniqueName": "C:\\PIT\\Projeto Lanchonete\\PIT-tela-de-login\\PIT-tela-de-login\\PIT-tela-de-login.csproj",
       "projectName": "PIT-tela-de-login",
-      "projectPath": "C:\\Projeto Pit (Lanchonete)\\PIT-tela-de-login\\PIT-tela-de-login\\PIT-tela-de-login.csproj",
+      "projectPath": "C:\\PIT\\Projeto Lanchonete\\PIT-tela-de-login\\PIT-tela-de-login\\PIT-tela-de-login.csproj",
       "packagesPath": "C:\\Users\\Mateus Rosa\\.nuget\\packages\\",
-      "outputPath": "C:\\Projeto Pit (Lanchonete)\\PIT-tela-de-login\\PIT-tela-de-login\\obj\\",
+      "outputPath": "C:\\PIT\\Projeto Lanchonete\\PIT-tela-de-login\\PIT-tela-de-login\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

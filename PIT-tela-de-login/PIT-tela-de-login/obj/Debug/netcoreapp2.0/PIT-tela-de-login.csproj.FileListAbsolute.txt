@@ -119,3 +119,14 @@ C:\Users\Mateus Rosa\Desktop\PIT-tela-de-login\PIT-tela-de-login\PIT-tela-de-log
 C:\Users\Mateus Rosa\Desktop\PIT-tela-de-login\PIT-tela-de-login\PIT-tela-de-login\obj\Debug\netcoreapp2.0\PIT-tela-de-login.dll
 C:\Users\Mateus Rosa\Desktop\PIT-tela-de-login\PIT-tela-de-login\PIT-tela-de-login\obj\Debug\netcoreapp2.0\PIT-tela-de-login.pdb
 C:\Users\Mateus Rosa\Desktop\PIT-tela-de-login\PIT-tela-de-login\PIT-tela-de-login\obj\Debug\netcoreapp2.0\PIT-tela-de-login.csprojAssemblyReference.cache
+C:\PIT\Projeto Lanchonete\PIT-tela-de-login\PIT-tela-de-login\bin\Debug\netcoreapp2.0\PIT-tela-de-login.deps.json
+C:\PIT\Projeto Lanchonete\PIT-tela-de-login\PIT-tela-de-login\bin\Debug\netcoreapp2.0\PIT-tela-de-login.runtimeconfig.json
+C:\PIT\Projeto Lanchonete\PIT-tela-de-login\PIT-tela-de-login\bin\Debug\netcoreapp2.0\PIT-tela-de-login.runtimeconfig.dev.json
+C:\PIT\Projeto Lanchonete\PIT-tela-de-login\PIT-tela-de-login\bin\Debug\netcoreapp2.0\PIT-tela-de-login.dll
+C:\PIT\Projeto Lanchonete\PIT-tela-de-login\PIT-tela-de-login\bin\Debug\netcoreapp2.0\PIT-tela-de-login.pdb
+C:\PIT\Projeto Lanchonete\PIT-tela-de-login\PIT-tela-de-login\obj\Debug\netcoreapp2.0\PIT-tela-de-login.csprojAssemblyReference.cache
+C:\PIT\Projeto Lanchonete\PIT-tela-de-login\PIT-tela-de-login\obj\Debug\netcoreapp2.0\PIT-tela-de-login.csproj.CoreCompileInputs.cache
+C:\PIT\Projeto Lanchonete\PIT-tela-de-login\PIT-tela-de-login\obj\Debug\netcoreapp2.0\PIT-tela-de-login.AssemblyInfoInputs.cache
+C:\PIT\Projeto Lanchonete\PIT-tela-de-login\PIT-tela-de-login\obj\Debug\netcoreapp2.0\PIT-tela-de-login.AssemblyInfo.cs
+C:\PIT\Projeto Lanchonete\PIT-tela-de-login\PIT-tela-de-login\obj\Debug\netcoreapp2.0\PIT-tela-de-login.dll
+C:\PIT\Projeto Lanchonete\PIT-tela-de-login\PIT-tela-de-login\obj\Debug\netcoreapp2.0\PIT-tela-de-login.pdb

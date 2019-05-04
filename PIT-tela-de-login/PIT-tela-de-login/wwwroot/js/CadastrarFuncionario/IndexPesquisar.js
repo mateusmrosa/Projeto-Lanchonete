@@ -88,7 +88,7 @@ var indexPesquisar = {
     editar: function (id) {
 
         //janela que abrir a pesquisa
-        window.parent.index.login(id);
+        window.parent.index.editar(id);
     },
 
     excluir: function (id) {

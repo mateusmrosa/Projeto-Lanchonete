@@ -45,7 +45,6 @@ namespace PIT_tela_de_login.Models
 
         public bool Gravar(Funcionario f, out string msg)
         {
-
             msg = "";
 
             if (f.Cpf.Length < 11)
@@ -84,7 +83,7 @@ namespace PIT_tela_de_login.Models
             else
             {
                 sql = @"update funcionario 
-                         set nome = @nome, cpf = @cpf, senha = @senha
+                         set nome = @nome, cpf = @cpf
                          where id = @id";
 
                 ps.Add("@id", f.Id);

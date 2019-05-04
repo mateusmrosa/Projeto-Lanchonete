@@ -19,12 +19,13 @@ namespace PIT_tela_de_login.Controllers
             Models.Funcionario f = new Models.Funcionario();
             bool ok = f.ValidarSenha(dados["cpf"], dados["senha"]);
 
-            string nome ="";
+            string nome = "";
 
-            if(ok == true)
+            if (ok == true)
             {
                 f.Obter(dados["cpf"]);
                 nome = f.NomeCompleto;
+                
             }
             //obj anônimo
             var retornoServ = new

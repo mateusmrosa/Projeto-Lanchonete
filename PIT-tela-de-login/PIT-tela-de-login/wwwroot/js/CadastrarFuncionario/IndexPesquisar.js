@@ -88,7 +88,7 @@ var indexPesquisar = {
     editar: function (id) {
 
         //janela que abrir a pesquisa
-        window.parent.indexf.editar(id);
+        window.parent.index.login(id);
     },
 
     excluir: function (id) {
@@ -101,7 +101,7 @@ var indexPesquisar = {
             id: id
         };
 
-        fd.ajax("POST", "/GerenciadorFuncionario/Excluir", dados, function (retServ) {
+        fd.ajax("POST", "/CadastrarFuncionario/Excluir", dados, function (retServ) {
 
             if (retServ.operacao) {
 

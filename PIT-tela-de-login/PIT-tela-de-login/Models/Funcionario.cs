@@ -54,10 +54,13 @@ namespace PIT_tela_de_login.Models
                 return false;
             }
 
-            if (f.Senha.Length < 6)
+            if(f.Id == 0)
             {
-                msg = "<div class='alert alert-danger'>Senha muito pequena.</div>";
-                return false;
+                if (f.Senha.Length < 6)
+                {
+                    msg = "<div class='alert alert-danger'>Senha muito pequena.</div>";
+                    return false;
+                }
             }
 
             if (CPFCadastrado(f.Cpf, f.Id))
@@ -209,6 +212,17 @@ namespace PIT_tela_de_login.Models
             f.Senha = dt.Rows[0]["senha"].ToString();
 
             return f;
+        }
+
+        public bool Excluir(int id)
+        {
+            DAL.MySQLPersistencia bd = new DAL.MySQLPersistencia();
+            string sql = "delete from funcionario where id = @id";
+            Dictionary<string, object> ps = new Dictionary<string, object>();
+            ps.Add("@id", id);
+
+            int linhasAfetadas = bd.ExecutarComando(sql, ps);
+            return linhasAfetadas > 0;
         }
     }
 

@@ -10,7 +10,17 @@ var index = {
             senha: fd.getValById("senha")
         }
 
-        if (obj.nomeCompleto.trim() == "" || obj.cpf.trim() == "" || obj.senha.trim() == "") {
+        if (obj.id == 0) {
+
+            if (obj.senha.trim() == "") {
+                fd.getById("divMsg").className = "alert alert-danger";
+                fd.getById("divMsg").innerHTML = "Preencha os campos!";
+                return;
+            }
+                
+
+        }
+        if (obj.nomeCompleto.trim() == "" || obj.cpf.trim() == "") {
             fd.getById("divMsg").className = "alert alert-danger";
             fd.getById("divMsg").innerHTML = "Preencha os campos!";
             return;
@@ -34,7 +44,7 @@ var index = {
     },
 
     abrirPesquisa: function () {
-        
+
         //alert("oi");
         $.fancybox.open({
             src: "/cadastrarfuncionario/IndexPesquisar",
@@ -47,13 +57,13 @@ var index = {
 
         $.fancybox.close();
 
-        var url = "/GerenciadorFuncionario/obter/" + id
+        var url = "/cadastrarfuncionario/obter/" + id
         fd.ajax("GET", url, null, function (retServ) {
 
             fd.getById("hId").value = retServ.id;
-            fd.getById("txtNome").value = retServ.nomeCompleto;
-            fd.getById("txtCPF").value = retServ.cpf;
-            fd.getById("txtSenha").disabled = "disabled";
+            fd.getById("nome").value = retServ.nomeCompleto;
+            fd.getById("cpf").value = retServ.cpf;
+            fd.getById("senha").disabled = "disabled";
 
         }, function () {
 

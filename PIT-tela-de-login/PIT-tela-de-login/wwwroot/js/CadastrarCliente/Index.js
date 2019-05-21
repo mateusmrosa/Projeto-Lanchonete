@@ -5,6 +5,7 @@ var index = {
     gravarCliente: function () {
 
         var obj = {
+            id: fd.getValById("hId"),
             nome: fd.getValById("nome"),
             cpf: fd.getValById("cpf")
         }
@@ -15,7 +16,7 @@ var index = {
             return;
         }
 
-        fd.ajax("POST", "/cadastrarcliente/Gravar", obj, index.gravarSuccess, index.gravarFail);
+        fd.ajax("POST", "/CadastrarCliente/Gravar", obj, index.gravarSuccess, index.gravarFail);
     },
 
     gravarSucess: function (retornoServer) {
@@ -23,6 +24,7 @@ var index = {
         fd.getById("divMsg").innerHTML = retornoServer.msg;
         fd.getById("hId").value = retornoServer.id;
     },
+
 
     gravarFail: function () {
         alert("***ERROR***");

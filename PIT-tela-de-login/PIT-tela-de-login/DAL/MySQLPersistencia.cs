@@ -9,7 +9,8 @@ namespace PIT_tela_de_login.DAL
 {
     public class MySQLPersistencia
     {
-        MySqlConnection _conexao;
+        private static MySQLPersistencia instancia;
+        private MySqlConnection _conexao;
         MySqlCommand _cmd;
         long _ultimoId = 0;
         string _msgErro = "";
@@ -19,12 +20,21 @@ namespace PIT_tela_de_login.DAL
         public string MsgErro { get => _msgErro; }
         public string MsgErroTecnica { get => _msgErroTecnica; }
 
-        public MySQLPersistencia()
+        private MySQLPersistencia()
         {
             string strcon = "Server=den1.mysql6.gear.host;Database=pitsyslan;Uid=pitsyslan;Pwd=$123456;";
             _conexao = new MySqlConnection(strcon);
             _cmd = _conexao.CreateCommand();
 
+        }
+
+        public static MySQLPersistencia Conecta()
+        {
+            if (instancia == null)
+            {
+                instancia = new MySQLPersistencia();
+            }
+            return instancia;
         }
         /// <summary>
         /// Abre a conexão...
@@ -41,6 +51,7 @@ namespace PIT_tela_de_login.DAL
         public void Fechar()
         {
             _conexao.Close();
+            _cmd.Parameters.Clear();
         }
 
 

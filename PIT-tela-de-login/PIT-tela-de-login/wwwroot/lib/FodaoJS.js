@@ -4,15 +4,15 @@
         return document.getElementById(id);
     },
 
-    getValById: function (id) {
+     getValById: function (id) {
         return document.getElementById(id).value;
     },
 
     toggleLoading: function (show) {
 
         var html = '<div id="divLoading">' +
-            '<img src="/images/loading.gif" />' +
-            '</div>';
+                   '<img src="/images/loading.gif" />' +
+                   '</div>';
 
         if (show) {
             var div = document.createElement("div");

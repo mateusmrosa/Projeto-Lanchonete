@@ -1,0 +1,50 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section scripts{
+
+    <script src="~/js/CadastarProduto/Index.js"></script>
+
+}
+
+<h2>Cadastrar Produto</h2>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            @*<div class="card">
+                    <div class="card-body">
+                        Cadastrar Funcionário.
+                    </div>
+                </div>*@
+            <div class="wrapper fadeInDown">
+
+                <div id="formContent">
+
+                    <form class="text-center border border-light p-5">
+
+                        <input type="hidden" id="hId" value="0" />
+
+                        <input id="nome" class="form-control mb-4" placeholder="Produto">
+
+                        <select id="tipoProd" class="browser-default custom-select mb-4">
+                            <option value="0">Tipo de produto...</option>
+                            <option value="1">Lanche</option>
+                            <option value="2">Pizza</option>
+                            <option value="3">Bebida</option>
+                        </select>
+
+                        <input id="valor" class="form-control mb-4" placeholder="R$">
+
+                        <button class="btn btn-info btn-block" type="button" onclick="index.cadastrar()">Cadastrar</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

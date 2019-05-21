@@ -32,19 +32,19 @@ namespace PIT_tela_de_login.Models
         {
             msg = "";
 
-            if (c.Cpf.Length < 11)
-            {
-                msg = "<div class='alert alert-danger'>CPF inválido.</div>";
-                return false;
-            }
+            //if (c.Cpf.Length < 11)
+            //{
+            //    msg = "<div class='alert alert-danger'>CPF inválido.</div>";
+            //    return false;
+            //}
 
-            if (CPFCadastrado(c.Cpf, c.Id))
-            {
-                msg = "<div class='alert alert-danger'>Este CPF já foi cadastrado.</div>";
-                return false;
-            }
+            //if (CPFCadastrado(c.Cpf, c.Id))
+            //{
+            //    msg = "<div class='alert alert-danger'>Este CPF já foi cadastrado.</div>";
+            //    return false;
+            //}
 
-            DAL.MySQLPersistencia bd = new DAL.MySQLPersistencia();
+            DAL.MySQLPersistencia bd = DAL.MySQLPersistencia.Conecta();
 
             string sql = "";
             Dictionary<string, object> ps = new Dictionary<string, object>();
@@ -56,9 +56,9 @@ namespace PIT_tela_de_login.Models
             }
             else
             {
-                sql = @"update funcionario 
+                sql = @"update clientes 
                          set nome = @nome, cpf = @cpf
-                         where id = @id";
+                         where idclientes = @id";
 
                 ps.Add("@id", c.Id);
             }
@@ -77,29 +77,29 @@ namespace PIT_tela_de_login.Models
         public bool CPFCadastrado(string cpf, int idDonoCPF)
         {
 
-            DAL.MySQLPersistencia bd = new DAL.MySQLPersistencia();
+            DAL.MySQLPersistencia bd = DAL.MySQLPersistencia.Conecta();
 
             Dictionary<string, object> ps = new Dictionary<string, object>();
             ps.Add("@cpf", cpf);
             ps.Add("@idDonoCPF", idDonoCPF);
 
-            string sql = @"select count(*) from funcionario
-                           where cpf = @cpf and id <> @idDonoCPF";
+            string sql = @"select count(*) from clientes
+                           where cpf = @cpf and idclientes <> @idDonoCPF";
 
             Int64 valor = (Int64)bd.ExecutarAgregacao(sql, ps);
 
             return valor == 1;
         }
 
-        public bool Excluir(int id)
-        {
-            DAL.MySQLPersistencia bd = new DAL.MySQLPersistencia();
-            string sql = "delete from funcionario where id = @id";
-            Dictionary<string, object> ps = new Dictionary<string, object>();
-            ps.Add("@id", id);
+        //public bool Excluir(int id)
+        //{
+        //    DAL.MySQLPersistencia bd = DAL.MySQLPersistencia.Conecta();
+        //    string sql = "delete from clientes where id = @id";
+        //    Dictionary<string, object> ps = new Dictionary<string, object>();
+        //    ps.Add("@id", id);
 
-            int linhasAfetadas = bd.ExecutarComando(sql, ps);
-            return linhasAfetadas > 0;
-        }
+        //    int linhasAfetadas = bd.ExecutarComando(sql, ps);
+        //    return linhasAfetadas > 0;
+        //}
     }
 }

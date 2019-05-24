@@ -7,10 +7,15 @@
 @section scripts{
 
     <script src="~/js/CadastarProduto/Index.js"></script>
+   
+
+        <script src="~/lib/jquery/jquery-3.4.0.min.js"></script>
+        <link href="~/lib/fancybox3/jquery.fancybox.min.css" rel="stylesheet" />
+        <script src="~/lib/fancybox3/jquery.fancybox.min.js"></script>
+    
+
 
 }
-
-<h2>Cadastrar Produto</h2>
 
 <div class="container">
     <div class="row">
@@ -24,24 +29,30 @@
 
                 <div id="formContent">
 
-                    <form class="text-center border border-light p-5">
+                    <form class="p-4 border border-light">
 
                         <input type="hidden" id="hId" value="0" />
 
                         <input id="nome" class="form-control mb-4" placeholder="Produto">
 
-                        <select id="tipoProd" class="browser-default custom-select mb-4">
+                        <select id="tipoProd" class="mb-4 browser-default custom-select">
                             <option value="0">Tipo de produto...</option>
                             <option value="1">Lanche</option>
                             <option value="2">Pizza</option>
                             <option value="3">Bebida</option>
                         </select>
 
-                        <input id="valor" class="form-control mb-4" placeholder="R$">
+                        <input type="number" placeholder="Quantidade" id="quantidade" class="mb-4 form-control">
 
-                        <button class="btn btn-info btn-block" type="button" onclick="index.cadastrar()">Cadastrar</button>
+                        <input id="valor" class="mb-4 form-control" placeholder="R$">
+
+                        <button class="btn btn-success" type="button" onclick="index.cadastrar()">Cadastrar</button>
+                        <button class="btn btn-danger" type="button" onclick="">Cancelar</button>
+                        <button class="btn btn-info" type="button" onclick="index.abrirPesquisa()">Pesquisar</button>
+
 
                     </form>
+                    <div style="width:100%;" id="divMsg"></div>
                 </div>
             </div>
         </div>

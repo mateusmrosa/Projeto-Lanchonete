@@ -1,4 +1,4 @@
-﻿
+﻿@using Microsoft.AspNetCore.Http;
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -10,7 +10,7 @@
 
 <br /><br /><br /><br />
 <body>
-    
+    <p>@Context.Session.GetString("nome")</p>
     
 </body>
 

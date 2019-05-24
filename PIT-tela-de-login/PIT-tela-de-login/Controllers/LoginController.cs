@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace PIT_tela_de_login.Controllers
@@ -19,18 +20,29 @@ namespace PIT_tela_de_login.Controllers
             Models.Funcionario f = new Models.Funcionario();
             bool ok = f.ValidarSenha(dados["cpf"], dados["senha"]);
 
-            string nome = "";
-
-            if (ok == true)
+            if (ok)
             {
                 f.Obter(dados["cpf"]);
-                nome = f.NomeCompleto;
+
+                //criar a session
+                HttpContext.Session.SetString("id", f.Id.ToString());
+                HttpContext.Session.SetString("nome", f.NomeCompleto);
                 
             }
+
+            //string nome = "";
+
+            //if (ok == true)
+            //{
+            //    f.Obter(dados["cpf"]);
+            //    nome = f.NomeCompleto;
+                
+            //}
+
             //obj anônimo
             var retornoServ = new
             {
-                nome = nome,
+                nome = f.NomeCompleto,
                 operacao = ok
             };
 

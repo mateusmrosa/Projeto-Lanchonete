@@ -1,0 +1,84 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_LayoutModal.cshtml";
+}
+
+@section estilos{
+    <link href="~/css/CadastrarProduto/IndexPesquisar.css" rel="stylesheet" />
+    <style>
+
+        #divResultado {
+            position: relative;
+        }
+
+        #tabResultado {
+            border-collapse: collapse;
+            position: absolute;
+            display: none;
+        }
+
+            #tabResultado tr th {
+                background-color: #56baed;
+                padding: 5px;
+                border: 1px solid #e8dede;
+            }
+
+            #tabResultado tr td {
+                border: 1px solid #e8dede;
+                padding: 5px;
+            }
+
+                #tabResultado tr td a {
+                    padding: 10px;
+                }
+
+
+      
+    </style>
+}
+
+
+
+@section scripts{
+    <script src="~/js/CadastrarProduto/IndexPesquisar.js"></script>
+}
+<br />
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="md-form mt-0">
+                <input class="form-control" aria-label="Search" type="search" id="nome" placeholder="Informe o funcionário" onkeyup="indexPesquisar.pesquisar()" />
+                <input type="button" style="background-color:#56baed;" id="btnPesquisar" value="Pesquisar" onclick="indexPesquisar.pesquisar()" />
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <div id="divResultado">
+                <table class="table" id="tabResultado" data-andre="true">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>CPF</th>
+                            <th>Ações</th>
+
+                        </tr>
+                    </thead>
+                    <tbody id="tbodyRes">
+                        <tr>
+                            <td colspan="4">Pesquise algum nome acima</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+
+
+
+

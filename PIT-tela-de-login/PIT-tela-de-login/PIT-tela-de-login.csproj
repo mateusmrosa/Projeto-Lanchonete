@@ -15,6 +15,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Update="Views\CadastrarProduto\IndexPesquisar.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
     <Content Update="Views\Shared\_LayoutModal.cshtml">
       <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>

@@ -170,7 +170,7 @@ namespace PIT_tela_de_login.Models
 
         
 
-        public Funcionario Obter(string cpf)
+        public bool  Obter(string cpf)
         {
             Funcionario f = new Funcionario();
 
@@ -183,12 +183,12 @@ namespace PIT_tela_de_login.Models
             DataTable dt = bd.ExecutarConsulta(sql, ps);
             //Mapeando linhas de tabela em objetos.
 
-            f.Id = Convert.ToInt32(dt.Rows[0]["id"]);
-            f.NomeCompleto = dt.Rows[0]["nome"].ToString();
-            f.Cpf = dt.Rows[0]["cpf"].ToString();
-            f.Senha = dt.Rows[0]["senha"].ToString();
+            this.Id = Convert.ToInt32(dt.Rows[0]["id"]);
+            this.NomeCompleto = dt.Rows[0]["nome"].ToString();
+            this.Cpf = dt.Rows[0]["cpf"].ToString();
+            this.Senha = dt.Rows[0]["senha"].ToString();
 
-            return f;
+            return true;
         }
 
 

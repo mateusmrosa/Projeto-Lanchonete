@@ -22,6 +22,8 @@ namespace PIT_tela_de_login
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+            services.AddDistributedMemoryCache();
+            services.AddSession();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -38,6 +40,9 @@ namespace PIT_tela_de_login
             }
 
             app.UseStaticFiles();
+
+            //usando sessão
+            app.UseSession();
 
             app.UseMvc(routes =>
             {

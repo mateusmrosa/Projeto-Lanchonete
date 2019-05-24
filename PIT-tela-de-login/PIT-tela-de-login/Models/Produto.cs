@@ -10,13 +10,15 @@ namespace PIT_tela_de_login.Models
         private int _id;
         private string _nome;
         private int _tipoProd;
+        private int _quantidade;
         private double _valor;
 
-        public Produto(int id, string nome, int tipoProd, double valor)
+        public Produto(int id, string nome, int tipoProd, int quantidade, double valor)
         {
             Id = id;
             Nome = nome;
             TipoProd = tipoProd;
+            Quantidade = quantidade;
             Valor = valor;
         }
 
@@ -25,12 +27,14 @@ namespace PIT_tela_de_login.Models
             _id = 0;
             Nome = "";
             TipoProd = 0;
+            Quantidade = 0;
             Valor = 0;
         }
 
         public int Id { get => _id; set => _id = value; }
         public string Nome { get => _nome; set => _nome = value; }
         public int TipoProd { get => _tipoProd; set => _tipoProd = value; }
+        public int Quantidade { get => _quantidade; set => _quantidade = value; }
         public double Valor { get => _valor; set => _valor = value; }
 
         public bool Gravar(Produto p, out string msg)
@@ -46,13 +50,13 @@ namespace PIT_tela_de_login.Models
 
             if (p.Id == 0)
             {
-                sql = @"insert into produtos (nome, tipo_prod, valor) 
-                         values (@nome, @tipo_prod, @valor)";
+                sql = @"insert into produtos (nome, tipo_prod, valor, quantidade) 
+                         values (@nome, @tipo_prod, @valor, @quantidade)";
             }
             else
             {
                 sql = @"update produtos 
-                         set nome = @nome, tipo_prod = @tipo_prod, valor = @valor
+                         set nome = @nome, tipo_prod = @tipo_prod, valor = @valor, quantidade = @quantidade
                          where idprodutos = @idprodutos";
 
                 ps.Add("@id", p.Id);
@@ -60,6 +64,7 @@ namespace PIT_tela_de_login.Models
 
             ps.Add("@nome", p.Nome);
             ps.Add("@tipo_prod", p.TipoProd);
+            ps.Add("@quantidade", p.Quantidade);
             ps.Add("@valor", p.Valor);
 
             int r = bd.ExecutarComando(sql, ps);

@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace PIT_tela_de_login.Controllers
 {
+    [Autorizacao]
     public class CadastrarClienteController : Controller
     {
         public IActionResult Index()

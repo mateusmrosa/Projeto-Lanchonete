@@ -48,5 +48,9 @@
             type: 'iframe',
             smallBtn: true
         });
+    },
+
+    cancelar: function () {
+        window.location.href = window.location.href; 
     }
 }

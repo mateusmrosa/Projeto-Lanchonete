@@ -39,7 +39,7 @@ var index = {
                 fd.getById("divMsg").innerHTML = "Bem-vindo " + retornoServ.nome;
 
                 setTimeout(function () {
-                   window.location.href = "home/index";
+                    window.location.href = "CadastrarProduto";
                 }, 2000);
                 
             }

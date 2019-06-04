@@ -19,6 +19,7 @@ namespace PIT_tela_de_login.Controllers
             string msg = "";
 
             Models.Cliente c = new Models.Cliente();
+            c.Id = Convert.ToInt32(dados["id"]);
             c.Nome = dados["nome"];
             c.Cpf = dados["cpf"];
             bool ok = c.Gravar(c, out msg);

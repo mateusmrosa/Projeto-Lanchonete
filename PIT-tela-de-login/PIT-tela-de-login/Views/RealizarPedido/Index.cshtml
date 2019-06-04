@@ -1,0 +1,108 @@
+﻿@using Microsoft.AspNetCore.Http;
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section scripts{
+
+    <script src="~/js/RealizarPedido/Index.js"></script>
+}
+
+@section estilos{
+    <style>
+
+        .btnAdd {
+            width: 23px;
+            vertical-align: bottom;
+        }
+
+        .disabled {
+            pointer-events: none;
+            opacity: 0.5;
+        }
+
+        #ulAutoCompleteProduto {
+            border: 1px solid gray;
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            position: absolute;
+            background-color: #fff;
+            min-width: 150px;
+            max-height: 300px;
+            overflow-y: scroll;
+            display: none;
+        }
+
+            #ulAutoCompleteProduto li {
+                padding: 5px;
+                margin-bottom: 0;
+                cursor: pointer;
+            }
+
+                #ulAutoCompleteProduto li:hover {
+                    background-color: lightgray;
+                }
+
+
+        .disabled {
+            pointer-events: none;
+            opacity: 0.5;
+        }
+    </style>
+}
+
+
+
+<input type="hidden" id="hId" value="0" />
+<input type="hidden" id="hIdFunc" value="@Context.Session.GetString("id")" />
+
+<div class="container fadeInDown">
+    <div class="row">
+        <div class="col-md-12">
+            <ul class="formularioContainer form-row mb-4">
+
+                <li class="col">
+                    <input value="" id="txtProduto" required="required" class="form-control mb-4" placeholder="Produto" onkeyup="index.pesquisarProduto()" onsearch="index.pesquisarProduto()" />
+                    <input type="hidden" id="hIdProduto" />
+                    <ul id="ulAutoCompleteProduto">
+                        <!--AJAX-->
+                    </ul>
+                </li>
+
+                <li class="col">
+                    <input value="" required="required" class="form-control mb-4" id="txtQuantidade" placeholder="Quantidade" />
+                </li>
+                <li class="col">
+                    <input value="" required="required" class="form-control mb-4" id="txtValor" placeholder="Valor" />
+                </li>
+                <li class="col">
+                    <img src="~/images/add.png" id="btnAdd" class="btnAdd disabled" onclick="index.adicionar()" />
+                </li>
+            </ul>
+
+            <label class="label">
+                <b>Itens adicionados</b>
+            </label>
+            <table class="table">
+                <thead class="blue white-text">
+                    <tr>
+                        <th scope="col">Produto</th>
+                        <th scope="col">Quantidade</th>
+                        <th scope="col">Valor</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="tbodyItems"></tbody>
+            </table>
+
+
+            <input type="button" class="btn btn-success" value="Gravar" onclick="index.gravar()">
+            <input type="button" class="btn btn-danger" value="Novo" onclick="index.novo()">
+            <div id="divMsg"></div>
+        </div>
+    </div>
+</div>
+
+

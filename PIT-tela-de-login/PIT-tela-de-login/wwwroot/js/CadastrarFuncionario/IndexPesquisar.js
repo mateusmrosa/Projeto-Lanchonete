@@ -61,7 +61,7 @@ var indexPesquisar = {
                 var tdCPF = document.createElement("td");
                 tdCPF.innerHTML = item.cpf;
 
-                var tdAcoes = document.createElement("td")
+                var tdAcoes = document.createElement("td");
                 tdAcoes.innerHTML = "<a onclick=\"indexPesquisar.editar(" + item.id + ")\">editar</a>";
                 tdAcoes.innerHTML += "<a onclick=\"indexPesquisar.excluir(" + item.id + ")\">excluir</a>";
 

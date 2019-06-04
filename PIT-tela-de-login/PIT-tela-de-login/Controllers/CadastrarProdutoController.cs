@@ -28,6 +28,7 @@ namespace PIT_tela_de_login.Controllers
             bool operacao = false;
 
             Models.Produto p = new Models.Produto();
+            p.Id = Convert.ToInt32(dados["id"]);
             p.Nome = dados["nome"];
             p.TipoProd = Convert.ToInt32(dados["tipoProd"]);
             p.Quantidade = Convert.ToInt32(dados["quantidade"]);
@@ -52,7 +53,8 @@ namespace PIT_tela_de_login.Controllers
             var retorno = new
             {
                 operacao = operacao,
-                msg = msg
+                msg = msg,
+                id = p.Id
             };
 
             return Json(retorno); //serializa....

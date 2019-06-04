@@ -53,7 +53,7 @@ namespace PIT_tela_de_login.Models
                 return false;
             }
 
-            if(f.Id == 0)
+            if (f.Id == 0)
             {
                 if (f.Senha.Length < 6)
                 {
@@ -70,7 +70,7 @@ namespace PIT_tela_de_login.Models
             }
 
 
-            DAL.MySQLPersistencia bd =  DAL.MySQLPersistencia.Conecta();
+            DAL.MySQLPersistencia bd = new DAL.MySQLPersistencia();
 
             string sql = "";
             Dictionary<string, object> ps = new Dictionary<string, object>();
@@ -104,7 +104,7 @@ namespace PIT_tela_de_login.Models
         public bool CPFCadastrado(string cpf, int idDonoCPF)
         {
 
-            DAL.MySQLPersistencia bd =  DAL.MySQLPersistencia.Conecta();
+            DAL.MySQLPersistencia bd = new DAL.MySQLPersistencia();
 
             Dictionary<string, object> ps = new Dictionary<string, object>();
             ps.Add("@cpf", cpf);
@@ -120,8 +120,8 @@ namespace PIT_tela_de_login.Models
 
         public bool ValidarSenha(string cpf, string senha)
         {
-            
-            DAL.MySQLPersistencia bd = DAL.MySQLPersistencia.Conecta();
+
+            DAL.MySQLPersistencia bd = new DAL.MySQLPersistencia();
 
             string sql = @"select count(*) from funcionario 
                            where cpf = @cpf and senha = @senha";
@@ -144,7 +144,8 @@ namespace PIT_tela_de_login.Models
 
             List<Funcionario> funcs = new List<Funcionario>();
 
-            DAL.MySQLPersistencia bd = DAL.MySQLPersistencia.Conecta();
+            DAL.MySQLPersistencia bd = new DAL.MySQLPersistencia();
+
             string sql = "select * from funcionario where nome like @nome";
 
             Dictionary<string, object> ps = new Dictionary<string, object>();
@@ -168,13 +169,13 @@ namespace PIT_tela_de_login.Models
             return funcs;
         }
 
-        
 
-        public bool  Obter(string cpf)
+
+        public bool Obter(string cpf)
         {
             Funcionario f = new Funcionario();
 
-            DAL.MySQLPersistencia bd =  DAL.MySQLPersistencia.Conecta();
+            DAL.MySQLPersistencia bd = new DAL.MySQLPersistencia();
             string sql = "select * from funcionario where cpf = @cpf";
 
             Dictionary<string, object> ps = new Dictionary<string, object>();
@@ -196,7 +197,7 @@ namespace PIT_tela_de_login.Models
         {
             Funcionario f = new Funcionario();
 
-            DAL.MySQLPersistencia bd = DAL.MySQLPersistencia.Conecta();
+            DAL.MySQLPersistencia bd = new DAL.MySQLPersistencia();
             string sql = "select * from funcionario where id = @id";
 
             Dictionary<string, object> ps = new Dictionary<string, object>();
@@ -215,7 +216,7 @@ namespace PIT_tela_de_login.Models
 
         public bool Excluir(int id)
         {
-            DAL.MySQLPersistencia bd = DAL.MySQLPersistencia.Conecta();
+            DAL.MySQLPersistencia bd = new DAL.MySQLPersistencia();
             string sql = "delete from funcionario where id = @id";
             Dictionary<string, object> ps = new Dictionary<string, object>();
             ps.Add("@id", id);

@@ -26,6 +26,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="wwwroot\lib\fontello\font\fontello.svg" />
+    <None Include="wwwroot\lib\fontello\font\fontello.woff2" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Update="Views\CadastrarProduto\IndexPesquisar.cshtml">
       <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>

@@ -1,40 +1,35 @@
-﻿using MySql.Data.MySqlClient;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
+using MySql.Data.MySqlClient;
 
 namespace PIT_tela_de_login.DAL
 {
     public class MySQLPersistencia
     {
-        private static MySQLPersistencia instancia;
-        private MySqlConnection _conexao;
+        MySqlConnection _conexao;
         MySqlCommand _cmd;
+        MySqlTransaction _transacao;
+
         long _ultimoId = 0;
         string _msgErro = "";
         string _msgErroTecnica = "";
+        bool _comTransacao = false;
 
         public long UltimoId { get => _ultimoId; }
         public string MsgErro { get => _msgErro; }
         public string MsgErroTecnica { get => _msgErroTecnica; }
+        // public bool ComTransacao { get => _comTransacao; set => _comTransacao = value; }
 
-        private MySQLPersistencia()
+        public MySQLPersistencia()
         {
             string strcon = "Server=den1.mysql6.gear.host;Database=pitsyslan;Uid=pitsyslan;Pwd=$123456;";
             _conexao = new MySqlConnection(strcon);
             _cmd = _conexao.CreateCommand();
 
-        }
 
-        public static MySQLPersistencia Conecta()
-        {
-            if (instancia == null)
-            {
-                instancia = new MySQLPersistencia();
-            }
-            return instancia;
         }
         /// <summary>
         /// Abre a conexão...
@@ -51,9 +46,39 @@ namespace PIT_tela_de_login.DAL
         public void Fechar()
         {
             _conexao.Close();
-            _cmd.Parameters.Clear();
         }
 
+        public void IniciarTransacao()
+        {
+            _comTransacao = true;
+            Abrir();
+            _transacao = _conexao.BeginTransaction();
+            _cmd.Transaction = _transacao;
+        }
+
+        public void CommitarTransacao()
+        {
+
+            if (_transacao != null)
+            {
+                _transacao.Commit();
+                _transacao = null;
+                _comTransacao = false;
+                Fechar();
+            }
+        }
+
+        public void CancelarTransacao()
+        {
+            if (_transacao != null)
+            {
+                _transacao.Rollback();
+                _transacao = null;
+                _comTransacao = false;
+                Fechar();
+
+            }
+        }
 
         /// <summary>
         /// Usado para executar comandos Insert, Delete e Update, além de executar Stored Procedure.
@@ -75,6 +100,7 @@ namespace PIT_tela_de_login.DAL
             }
             catch (Exception ex)
             {
+                CancelarTransacao();
                 //erro
                 _msgErroTecnica = ex.Message;
                 _msgErro = "Não foi possível executar.";
@@ -83,7 +109,10 @@ namespace PIT_tela_de_login.DAL
             finally
             {
                 //sempre passará por aqui (no erro ou no acerto)
-                Fechar();
+                if (!_comTransacao)
+                {
+                    Fechar();
+                }
             }
 
             return linhaAfetadas;
@@ -119,6 +148,7 @@ namespace PIT_tela_de_login.DAL
             catch (Exception ex)
             {
                 //erro
+                CancelarTransacao();
                 _msgErroTecnica = ex.Message;
                 _msgErro = "Não foi possível executar.";
                 linhaAfetadas = -1;
@@ -126,7 +156,11 @@ namespace PIT_tela_de_login.DAL
             finally
             {
                 //sempre passará por aqui (no erro ou no acerto)
-                Fechar();
+                if (!_comTransacao)
+                {
+                    Fechar();
+                }
+
             }
 
             return linhaAfetadas;
@@ -146,12 +180,16 @@ namespace PIT_tela_de_login.DAL
             }
             catch (Exception ex)
             {
+                CancelarTransacao();
                 _msgErroTecnica = ex.Message;
                 _msgErro = "Não foi possível obter os dados.";
             }
             finally
             {
-                Fechar();
+                if (!_comTransacao)
+                {
+                    Fechar();
+                }
             }
 
             return dt;
@@ -174,12 +212,16 @@ namespace PIT_tela_de_login.DAL
             }
             catch (Exception ex)
             {
+                CancelarTransacao();
                 _msgErroTecnica = ex.Message;
                 _msgErro = "Não foi possível obter os dados.";
             }
             finally
             {
-                Fechar();
+                if (!_comTransacao)
+                {
+                    Fechar();
+                }
             }
 
             return dt;
@@ -198,12 +240,16 @@ namespace PIT_tela_de_login.DAL
             }
             catch (Exception ex)
             {
+                CancelarTransacao();
                 _msgErroTecnica = ex.Message;
                 _msgErro = "Não foi possível obter os dados.";
             }
             finally
             {
-                Fechar();
+                if (!_comTransacao)
+                {
+                    Fechar();
+                }
             }
 
             return valor;
@@ -226,18 +272,24 @@ namespace PIT_tela_de_login.DAL
             }
             catch (Exception ex)
             {
+                CancelarTransacao();
                 _msgErroTecnica = ex.Message;
                 _msgErro = "Não foi possível obter os dados.";
             }
             finally
             {
-                Fechar();
+                if (!_comTransacao)
+                {
+                    Fechar();
+                }
             }
 
             return valor;
         }
 
+        public void LimparParametros()
+        {
+            _cmd.Parameters.Clear();
+        }
     }
-
 }
-

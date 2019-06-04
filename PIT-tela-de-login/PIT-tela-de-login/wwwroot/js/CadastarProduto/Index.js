@@ -26,6 +26,7 @@
             if (retornoServ.operacao) {
                 fd.getById("divMsg").className = "alert alert-success";
                 fd.getById("divMsg").innerHTML = "Produto cadastrado com sucesso!";
+                fd.getById("hId").value = retornoServ.id;
                 //alert(retornoServ.msg);
             }
             else {

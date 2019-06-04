@@ -44,7 +44,7 @@ namespace PIT_tela_de_login.Models
             //    return false;
             //}
 
-            DAL.MySQLPersistencia bd = DAL.MySQLPersistencia.Conecta();
+            DAL.MySQLPersistencia bd = new DAL.MySQLPersistencia();
 
             string sql = "";
             Dictionary<string, object> ps = new Dictionary<string, object>();
@@ -58,9 +58,9 @@ namespace PIT_tela_de_login.Models
             {
                 sql = @"update clientes 
                          set nome = @nome, cpf = @cpf
-                         where idclientes = @id";
+                         where idclientes = @idclientes";
 
-                ps.Add("@id", c.Id);
+                ps.Add("@idclientes", c.Id);
             }
 
             ps.Add("@nome", c.Nome);
@@ -77,7 +77,7 @@ namespace PIT_tela_de_login.Models
         public bool CPFCadastrado(string cpf, int idDonoCPF)
         {
 
-            DAL.MySQLPersistencia bd = DAL.MySQLPersistencia.Conecta();
+            DAL.MySQLPersistencia bd = new DAL.MySQLPersistencia();
 
             Dictionary<string, object> ps = new Dictionary<string, object>();
             ps.Add("@cpf", cpf);

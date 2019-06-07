@@ -127,9 +127,9 @@
         index.dados.forEach(function (linha) {
 
             trs += "<tr data-id=\"" + linha.produtoId + "\" > " +
-                "  <td>" + linha.nome + "</td>" +
-                "  <td>" + linha.quantidade + "</td>" +
-                "  <td>" + "R$ " + linha.valor + "</td>" +
+                "  <td class='strBd'>" + linha.nome + "</td>" +
+                "  <td class='strBd'>" + linha.quantidade + "</td>" +
+                "  <td class='strBd'>" + "R$ " + linha.valor + "</td>" +
                 "  <td><a onclick=\"index.excluirItem(" + linha.produtoId + ")\" class=\"icon-cancel\"></a>" +
                 "      <a onclick=\"index.editarItem(" + linha.produtoId + ")\"class=\"icon-pencil\"></a>" +
                 "   </td > " +
@@ -191,12 +191,12 @@
             items: index.dados
         };
 
-        //if (fd.getById("txtProduto").value.trim() == "" || fd.getById("txtQuantidade").value.trim() == "" || fd.getById("txtValor").value.trim() == "") {
-        //    fd.getById("divMsg").className = "alert alert-danger";
-        //    fd.getById("divMsg").innerHTML = "Preencha so campo do pedido!";
-        //    return;
+        if (index.dados == "") {
+            fd.getById("divMsg").className = "alert alert-danger";
+            fd.getById("divMsg").innerHTML = "Preencha os campos do pedido!";
+            return;
             
-        //}
+        }
 
             fd.ajax("POST", "/RealizarPedido/Gravar", dados, function (retServ) {
 

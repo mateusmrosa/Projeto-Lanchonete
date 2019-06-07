@@ -12,6 +12,11 @@
 @section estilos{
     <style>
 
+            .strBd{
+            font-weight:bold;
+            text-align:justify;
+        }
+
         .btnAdd {
             width: 23px;
             vertical-align: bottom;
@@ -22,25 +27,12 @@
             opacity: 0.5;
         }
 
-        #ulAutoCompleteProduto {
-            border: 1px solid gray;
-            margin: 0;
-            padding: 0;
-            list-style-type: none;
-            position: absolute;
-            background-color: #fff;
-            min-width: 150px;
-            max-height: 300px;
-            overflow-y: scroll;
-            display: none;
-        }
-
             #ulAutoCompleteProduto li {
                 padding: 5px;
                 margin-bottom: 0;
                 cursor: pointer;
             }
-
+            
                 #ulAutoCompleteProduto li:hover {
                     background-color: lightgray;
                 }
@@ -49,6 +41,20 @@
         .disabled {
             pointer-events: none;
             opacity: 0.5;
+        }
+
+        .mdb-autocomplete-wrap {
+            -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+            box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+            position: absolute;
+            z-index: 100;
+            left: 0;
+            right: 0;
+            list-style-type: none;
+            overflow-y: auto;
+            max-height: 210px;
+            padding-left: 0;
+            background: #fff;
         }
     </style>
 }
@@ -64,10 +70,11 @@
             <ul class="formularioContainer form-row mb-4">
 
                 <li class="col">
-                    <input value="" id="txtProduto" required="required" class="form-control mb-4" placeholder="Produto" onkeyup="index.pesquisarProduto()" onsearch="index.pesquisarProduto()" />
+                    <input value="" id="txtProduto" class="form-control mdb-autocomplete" placeholder="Pesquisar produto" onkeyup="index.pesquisarProduto()" onsearch="index.pesquisarProduto()" />
                     <input type="hidden" id="hIdProduto" />
-                    <ul id="ulAutoCompleteProduto">
-                        <!--AJAX-->
+
+                    <ul class="mdb-autocomplete-wrap" id="ulAutoCompleteProduto">
+                        <!-- busca do ajax-->
                     </ul>
                 </li>
 
@@ -86,7 +93,7 @@
                 <b>Itens adicionados</b>
             </label>
             <table class="table">
-                <thead class="blue white-text">
+                <thead class="blue white-text strBd">
                     <tr>
                         <th scope="col">Produto</th>
                         <th scope="col">Quantidade</th>
